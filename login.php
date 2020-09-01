@@ -27,13 +27,17 @@ if (isset($_SESSION["login"])) {
 
 // login check
 if(isset($_POST["login"])){
-    $username = $_POST["username"];
+    $email = $_POST["email"];
     $password = $_POST["password"];
     
-    $result = mysqli_query($link, "SELECT * FROM admin_users WHERE username = '$username' ");
+    $result = mysqli_query($link, "SELECT * FROM admin_users WHERE email = '$email' ");
     
     // check username
     if(mysqli_num_rows($result) === 1) {
+
+        // put username to show at index
+        $put = mysqli_query($link, "SELECT username FROM admin_users WHERE email = '$email' ");
+        $username = mysqli_fetch_all($put, MYSQLI_ASSOC)[0]["username"];
 
         // check password
         $row = mysqli_fetch_all($result, MYSQLI_ASSOC)[0];
@@ -87,14 +91,14 @@ if(isset($_POST["login"])){
           <?php endif; ?>
         <form action="" method="post">
             <div class="form-group">
-                <label for="user-name">Username</label>
+                <label for="email">Email</label>
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon2"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        <span class="input-group-text" id="basic-addon2"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
                         </svg></span>
                     </div>
-                    <input type="text" class="form-control" id="user-name" placeholder="Masukan Username Anda" autocomplete="off" name="username">
+                    <input type="email" class="form-control" id="email" placeholder="Masukan Email Anda" name="email">
                 </div>
                 
             </div>
