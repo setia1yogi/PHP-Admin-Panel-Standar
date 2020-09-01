@@ -1,0 +1,18 @@
+.title {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+
+/* media breakpoints */
+
+/* Desktop version */
+
+@media (min-width: 992px){
+    .title {
+        font-size: 2em;
+        padding-top: 10px;
+    }
+}
