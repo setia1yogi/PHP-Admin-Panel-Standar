@@ -86,13 +86,27 @@ if(isset($_POST["submit"])){
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Nama</th>
-                    <th>Nim</th>
-                    <th>Alamat</th>
-                    <th>Jurusan</th>
-                    <th>Email</th>
-                    <th>No hp</th>
-                    <th>Photo</th>
+                    <th>Nama
+                        <button><i class="fa fa-arrow-down"></i></button>
+                    </th>
+                    <th>Nim
+                        <button><i class="fa fa-arrow-down"></i></button>
+                    </th>
+                    <th>Alamat
+                        <button><i class="fa fa-arrow-down"></i></button>
+                    </th>
+                    <th>Jurusan
+                        <button><i class="fa fa-arrow-down"></i></button>
+                    </th>
+                    <th>Email
+                        <button><i class="fa fa-arrow-down"></i></button>
+                    </th>
+                    <th>No hp
+                        <button><i class="fa fa-arrow-down"></i></button>
+                    </th>
+                    <th>Photo
+                        <button><i class="fa fa-arrow-down"></i></button>
+                    </th>
                     <th>Aksi</th>
                 </tr>
             </thead>
