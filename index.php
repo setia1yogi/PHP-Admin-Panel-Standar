@@ -36,7 +36,7 @@ if(isset($_POST["submit"])){
 <nav class="navigation">
     <a href="#">
         <img src="img/unpam.png" alt="Logo-Unpam">
-        <h3>Universitas Pemulang</h3>
+        <h3>Universitas Pamulang</h3>
     </a>
     <div class="panel-user">
         <i class="fa fa-user"></i>
@@ -60,7 +60,7 @@ if(isset($_POST["submit"])){
     <div class="title">
         <img src="img/unpam.png" class="logo-title" alt="Logo-Unpam">
         <img src="img/Seal_of_Ministry_of_Education_and_Culture_of_Indonesia.png" class="logo-title2" alt="Logo-kemdikbud">
-        <h1>Data Mahasiswa<br>Universitas Pemulang</h1>
+        <h1>Data Mahasiswa<br>Universitas Pamulang</h1>
         <h2>Tahun ajaran 2019 / 2020</h2>
         <hr>
     </div>
