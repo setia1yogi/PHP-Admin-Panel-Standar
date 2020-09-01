@@ -90,7 +90,9 @@ if(isset($_POST["login"])){
                 <label for="user-name">Username</label>
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-user"></i></span>
+                        <span class="input-group-text" id="basic-addon2"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg></span>
                     </div>
                     <input type="text" class="form-control" id="user-name" placeholder="Masukan Username Anda" autocomplete="off" name="username">
                 </div>
@@ -100,7 +102,10 @@ if(isset($_POST["login"])){
                 <label for="password">Password</label>
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fa fa-unlock-alt"></i></span>
+                        <span class="input-group-text"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+                        <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+                        </svg></span>
                     </div>
                     <input type="password" class="form-control" id="password" placeholder="Masukan Password Anda" autocomplete="off" name="password">
                 </div>
