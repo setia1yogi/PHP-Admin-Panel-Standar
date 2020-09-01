@@ -28,7 +28,7 @@ if(isset($_POST["submit"])){
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="shortcut" href=""> -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6c03feffe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -87,26 +87,24 @@ if(isset($_POST["submit"])){
                 <tr>
                     <th>No</th>
                     <th>Nama
-                        <button><i class="fa fa-arrow-down"></i></button>
+                        <i class="fas fa-sort"></i>
                     </th>
                     <th>Nim
-                        <button><i class="fa fa-arrow-down"></i></button>
+                        <i class="fas fa-sort"></i>
                     </th>
                     <th>Alamat
-                        <button><i class="fa fa-arrow-down"></i></button>
+                        <i class="fas fa-sort"></i>
                     </th>
                     <th>Jurusan
-                        <button><i class="fa fa-arrow-down"></i></button>
+                        <i class="fas fa-sort"></i>
                     </th>
                     <th>Email
-                        <button><i class="fa fa-arrow-down"></i></button>
+                        <i class="fas fa-sort"></i>
                     </th>
                     <th>No hp
-                        <button><i class="fa fa-arrow-down"></i></button>
+                        <i class="fas fa-sort"></i>
                     </th>
-                    <th>Photo
-                        <button><i class="fa fa-arrow-down"></i></button>
-                    </th>
+                    <th>Photo</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
