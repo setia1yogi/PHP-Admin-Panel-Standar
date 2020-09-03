@@ -17,6 +17,24 @@ if(isset($_POST["submit"])){
     $mahasiswa = search($_POST["search"]);
 }
 
+// sorting
+// For extra protection these are the columns of which the user can sort by (in your database table).
+$columns = array('nama', 'nim');
+
+// Only get the column if it exists in the above columns array, if it doesn't exist the database table will be sorted by the first item in the columns array.
+$column = isset($_GET['column']) && in_array($_GET['column'], $columns) ? $_GET['column'] : $columns[0];
+
+// Get the sort order for the column, ascending or descending, default is ascending.
+$sort_order = isset($_GET['order']) && strtolower($_GET['order']) == 'desc' ? 'DESC' : 'ASC';
+
+// Get the result
+if ($mahasiswa = mysqli_query($link, 'SELECT * FROM data_mahasiswa ORDER BY ' .  $column . ' ' . $sort_order)) {
+    // Some variables we need for the table.
+    $up_or_down = str_replace(array('ASC','DESC'), array('up','down'), $sort_order); 
+    $asc_or_desc = $sort_order == 'ASC' ? 'desc' : 'asc';
+
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -87,23 +105,17 @@ if(isset($_POST["submit"])){
                 <tr>
                     <th>No</th>
                     <th>Nama
-                        <i class="fas fa-sort"></i>
+                        <a href="index.php?column=nama&order=<?= $asc_or_desc; ?>" style="color:white;">
+                        <i class="fas fa-sort<?= $column == 'nama' ? '-' . $up_or_down : ''; ?>"></i></a>
                     </th>
                     <th>Nim
-                        <i class="fas fa-sort"></i>
+                        <a href="index.php?column=nim&order=<?= $asc_or_desc; ?>" style="color:white;">
+                        <i class="fas fa-sort<?= $column == 'nim' ? '-' . $up_or_down : ''; ?>"></i></a>
                     </th>
-                    <th>Alamat
-                        <i class="fas fa-sort"></i>
-                    </th>
-                    <th>Jurusan
-                        <i class="fas fa-sort"></i>
-                    </th>
-                    <th>Email
-                        <i class="fas fa-sort"></i>
-                    </th>
-                    <th>No hp
-                        <i class="fas fa-sort"></i>
-                    </th>
+                    <th>Alamat</th>
+                    <th>Jurusan</th>
+                    <th>Email</th>
+                    <th>No hp</th>
                     <th>Photo</th>
                     <th>Aksi</th>
                 </tr>
@@ -114,7 +126,7 @@ if(isset($_POST["submit"])){
                 <?php foreach ($mahasiswa as $mhs): ?>
                 <tr>
                     <td><?= $i; ?></td>
-                    <td><?= $mhs["nama"]; ?></td>
+                    <td <?= $column == "nama"; ?>><?= $mhs["nama"]; ?></td>
                     <td><?= $mhs["nim"];?></td>
                     <td><?= $mhs["alamat"];?></td>
                     <td><?= $mhs["jurusan"];?></td>
