@@ -106,11 +106,11 @@ if ($mahasiswa = mysqli_query($link, 'SELECT * FROM data_mahasiswa ORDER BY ' . 
                     <th>No</th>
                     <th>Nama
                         <a href="index.php?column=nama&order=<?= $asc_or_desc; ?>" style="color:white;">
-                        <i class="fas fa-sort<?= $column == 'nama' ? '-' . $up_or_down : ''; ?>"></i></a>
+                        <i class="fas fa-sort<?= $column == 'nama' ? '-' . $up_or_down : ''; ?>" ></i></a>
                     </th>
                     <th>Nim
                         <a href="index.php?column=nim&order=<?= $asc_or_desc; ?>" style="color:white;">
-                        <i class="fas fa-sort<?= $column == 'nim' ? '-' . $up_or_down : ''; ?>"></i></a>
+                        <i class="fas fa-sort<?= $column == 'nim' ? '-' . $up_or_down : ''; ?>" ></i></a>
                     </th>
                     <th>Alamat</th>
                     <th>Jurusan</th>
