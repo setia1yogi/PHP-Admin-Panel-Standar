@@ -32,9 +32,7 @@ if ($mahasiswa = mysqli_query($link, 'SELECT * FROM data_mahasiswa ORDER BY ' . 
     // Some variables we need for the table.
     $up_or_down = str_replace(array('ASC','DESC'), array('up','down'), $sort_order); 
     $asc_or_desc = $sort_order == 'ASC' ? 'desc' : 'asc';
-
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -48,34 +46,6 @@ if ($mahasiswa = mysqli_query($link, 'SELECT * FROM data_mahasiswa ORDER BY ' . 
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6c03feffe3.js" crossorigin="anonymous"></script>
 </head>
-<style>
-/* Media print */
-
-@media print {
-    .navigation {
-        display: none;
-    }
-    .functional-section {
-        display: none;
-    }
-    th a {
-        display: none;
-    }
-    .footer-right {
-        display: none;
-    }
-    .table-wrap {
-        overflow: hidden;
-    }
-    footer {
-        display: none;
-    }
-    .content-table thead tr th:last-child {
-        display: none;
-        table-layout: unset;
-    }
-}
-</style>
 <body>
 
 <!-- Navigation -->

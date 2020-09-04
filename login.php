@@ -55,13 +55,9 @@ if(isset($_POST["login"])){
             exit;
         }
     }
-
     $error = true;
 }
-
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -78,9 +74,7 @@ if(isset($_POST["login"])){
     <!-- Linked font awesome -->
     <link rel="stylesheet" href="fontawesome/css/all.css">
   </head>
-  <body>
-
-      
+  <body>      
       <div class="container">
           <h1 class="text-center">User Login</h1>
           <hr>

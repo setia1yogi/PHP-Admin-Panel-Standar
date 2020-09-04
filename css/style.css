@@ -302,3 +302,29 @@
         font-size: 0.6em;
     }
 }
+
+/* Media print */
+@media print {
+    .navigation {
+        display: none;
+    }
+    .functional-section {
+        display: none;
+    }
+    th a {
+        display: none;
+    }
+    .footer-right {
+        display: none;
+    }
+    .table-wrap {
+        overflow: hidden;
+    }
+    footer {
+        display: none;
+    }
+    .content-table thead tr th:last-child {
+        display: none;
+        table-layout: unset;
+    }
+}
