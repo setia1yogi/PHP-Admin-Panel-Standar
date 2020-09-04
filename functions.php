@@ -223,6 +223,5 @@ function register($data){
         ";
         return false;
     }
-
 }
 ?>
