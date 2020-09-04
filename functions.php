@@ -33,12 +33,24 @@ function add_data($data){
     $photo = upload();
 
     // check Nim 
-    $result = mysqli_query($link, "SELECT nim FROM data_mahasiswa WHERE nim = '$nim' ");
+    $check_nim = mysqli_query($link, "SELECT nim FROM data_mahasiswa WHERE nim = '$nim' ");
 
-    if ( mysqli_fetch_assoc($result) ){
+    if ( mysqli_fetch_assoc($check_nim) ){
         echo "
         <script>
             alert('Nim yang didaftarkan sudah ada!');
+        </script>
+        ";
+        return false;
+    }
+
+    // check Nim 
+    $check_email = mysqli_query($link, "SELECT email FROM data_mahasiswa WHERE email = '$email' ");
+
+    if ( mysqli_fetch_assoc($check_email) ){
+        echo "
+        <script>
+            alert('Email yang didaftarkan sudah ada!');
         </script>
         ";
         return false;
