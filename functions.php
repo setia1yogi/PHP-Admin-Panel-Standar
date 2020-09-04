@@ -61,7 +61,18 @@ function add_data($data){
     mysqli_query($link, $query);
 
     // Check succes insert
-    return mysqli_affected_rows($link);
+    if (mysqli_affected_rows($link)) {
+        echo "
+        <script>
+            if(confirm('Apakah ingin menambahkan file lagi ?')){
+                document.location.href = 'tambahData.php';
+            }else{
+                alert('Data berhasil ditambahkan');
+                document.location.href = 'index.php';
+            }
+        </script>
+        ";
+    }
 }
 
 // Upload image handler

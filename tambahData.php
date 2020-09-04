@@ -10,23 +10,7 @@ if(!$_SESSION["login"]) header("Location: login.php");
 
 // check submit
 if(isset($_POST["submit"])){
-    
-    if(add_data($_POST) > 0){
-        echo "
-        <script>
-                document.location.href = 'index.php';
-                alert('Data berhasil ditambahkan');
-        </script>
-        ";
-    }else {
-        echo "
-        <script>
-            alert('Data gagal ditambahkan');
-            document.location.href = 'index.php';
-        </script>
-        ";
-    }
-
+    add_data($_POST);
 }
 ?>
 
