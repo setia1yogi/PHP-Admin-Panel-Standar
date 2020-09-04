@@ -25,7 +25,6 @@ if(isset($_POST["submit"])){
         ";
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +40,7 @@ if(isset($_POST["submit"])){
 <div class="container">
 
 <h1 class="title">Register admin user</h1>
-<h4 class="text-center mb-4">Universitas Pemulang</h4>
+<h4 class="text-center mb-4">Universitas Pamulang</h4>
 
 <!-- form -->
 <form action="" method="post" autocomplete="off">

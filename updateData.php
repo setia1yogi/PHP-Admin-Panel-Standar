@@ -31,7 +31,6 @@ $id = $_GET["id"];
 
 // run queries to select data
 $mahasiswa = query("SELECT * FROM data_mahasiswa WHERE id=$id")[0];
-
 ?>
 
 <!DOCTYPE html>
