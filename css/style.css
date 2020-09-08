@@ -313,6 +313,8 @@
     }
     .content-table {
         font-size: 0.6em;
+    }
+    .table-wrap{
         overflow-x: scroll;
     }
 }
