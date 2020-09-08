@@ -178,6 +178,20 @@
     color: var(--primary);
 }
 
+/*  pagination  */
+.pagination {
+    text-align: center;
+}
+
+.pagination a{
+    display: inline-block;
+    width: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary);
+}
+
 /* button */
 .button {
     height: 40px;
