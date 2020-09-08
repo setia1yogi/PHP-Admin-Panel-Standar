@@ -13,7 +13,6 @@
 }
 
 /* navigation */
-
 .navigation {
     display: flex;
     background-color: var(--primary);
@@ -236,10 +235,10 @@
     display: flex;
     justify-content: flex-end;
 }
+
 /* media breakpoints */
 
 /* smartphone view */
-
 @media (max-width: 645px) {
     
     .navigation a {
@@ -314,7 +313,7 @@
     .content-table {
         font-size: 0.6em;
     }
-    .table-wrap{
+    .table-wrap {
         overflow-x: scroll;
     }
 }
