@@ -121,7 +121,6 @@
     position: relative;
     width: 95%;
     margin: 0 auto;
-    height: 150vh;
     overflow: hidden;
 }
 
@@ -137,7 +136,6 @@
 
 /* table */
 .table-wrap {
-    overflow-y: scroll;
     padding: 20px 0;
 }
 .content-table {
