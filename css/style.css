@@ -221,7 +221,6 @@
     display: flex;
     padding: 10px;
     align-items: center;
-    z-index: 2;
 }
 .footer-left {
     flex: 1.2;
