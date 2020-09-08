@@ -191,6 +191,7 @@
     text-decoration: none;
     color: white;
     background-color: var(--primary);
+    font-size: 0.8em;
 }
 
 /* button */
@@ -312,6 +313,7 @@
     }
     .content-table {
         font-size: 0.6em;
+        overflow-x: scroll;
     }
 }
 
