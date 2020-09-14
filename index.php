@@ -9,7 +9,7 @@ require 'functions.php';
 if(!$_SESSION["login"]) header("Location: login.php");
 
 // get data mahasiswa
-$mahasiswa = query("SELECT * FROM data_mahasiswa");
+
 
 // search submit
 if(isset($_POST["submit"])){
@@ -28,11 +28,11 @@ $column = isset($_GET['column']) && in_array($_GET['column'], $columns) ? $_GET[
 $sort_order = isset($_GET['order']) && strtolower($_GET['order']) == 'desc' ? 'DESC' : 'ASC';
 
 // Get the result
-if ($mahasiswa = mysqli_query($link, 'SELECT * FROM data_mahasiswa ORDER BY ' .  $column . ' ' . $sort_order)) {
-    // Some variables we need for the table.
-    $up_or_down = str_replace(array('ASC','DESC'), array('up','down'), $sort_order); 
-    $asc_or_desc = $sort_order == 'ASC' ? 'desc' : 'asc';
-}
+if($mahasiswa = mysqli_query($link, 'SELECT * FROM data_mahasiswa ORDER BY ' .  $column . ' ' . $sort_order)){
+        // Some variables we need for the table.
+        $up_or_down = str_replace(array('ASC','DESC'), array('up','down'), $sort_order); 
+        $asc_or_desc = $sort_order == 'ASC' ? 'desc' : 'asc';
+    }
 ?>
 
 <!DOCTYPE html>
