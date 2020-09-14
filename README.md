@@ -12,7 +12,7 @@
 
 ## Tujuan dibuatnya admin panel database ? 🤨
 
-Mempermudah proses manajemen data mahasiswa di universitas atau sekolah oleh admin dan Sebagai implementasi hasil belajar saya mengenai bahasa pemrograman PHP.
+Mempermudah proses manajemen data mahasiswa di universitas atau sekolah oleh admin, dan Sebagai implementasi dari hasil belajar admin pribadi dalam proses pembelajaran bahasa pemrograman PHP.
 
 ## Mengapa open source ? 🤔
 
@@ -24,6 +24,10 @@ Karena masih banyak fitur yang dapat ditambahkan lagi didalamnya sehingga membut
 - Sorting table
 - Registrasi admin
 - Live search
+- login system
+- Username display after login
+- Alert failed login
+- Pagination
 
 ## Demo 💣
 
