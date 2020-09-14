@@ -8,9 +8,6 @@ require 'functions.php';
 // check session or login manage
 if(!$_SESSION["login"]) header("Location: login.php");
 
-// get data mahasiswa
-
-
 // search submit
 if(isset($_POST["submit"])){
     // search data
