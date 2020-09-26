@@ -342,4 +342,7 @@
         display: none;
         table-layout: unset;
     }
+    .pagination {
+        display: none;
+    }
 }
