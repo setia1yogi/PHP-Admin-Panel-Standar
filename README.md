@@ -22,18 +22,19 @@ Karena masih banyak fitur yang dapat ditambahkan lagi didalamnya sehingga membut
 
 - CRUD (create, read, update, delete) function
 - Sorting table
-- Registrasi admin
+- Registration admin
 - Live search
 - login system
 - Username display after login
 - Alert failed login
 - Pagination
+- PDF Reporting
 
 ## Demo 💣
 
 Project ini belum di hosting dikarenakan masih banyak kekurangan, teman - teman jalankan di localhost atau kalian bisa download project ini via github.
 
-## Install
+## Install 💻
 
 - Clone/Download repository ini lalu simpan di folder htdocs ( Jika kalian memakai XAMPP )
 - Jalankan di web browser ( Chrome, Firefox, Edge, Safari ).
@@ -44,7 +45,7 @@ Project ini belum di hosting dikarenakan masih banyak kekurangan, teman - teman 
 -  email : admin@gmail.com
 -  password : Admin123
 
-## Prasyarat yang diperlukan
+## Prasyarat yang diperlukan ✌️
 
 - Versi PHP5+
 - XAMPP ( Atau apps web server lain )
