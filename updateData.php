@@ -58,7 +58,7 @@ $mahasiswa = query("SELECT * FROM data_mahasiswa WHERE id=$id")[0];
     </div>
     <div class="form-group">
       <label for="nim">Nim</label>
-      <input type="number" class="form-control" id="nim" placeholder="Masukan Nim Mahasiswa" name="nim" value="<?= $mahasiswa["nim"]; ?>" required>
+      <input type="number" class="form-control" id="nim" placeholder="Masukan Nim Mahasiswa" name="nim" value="<?= $mahasiswa["nim"]; ?>" min="12" max="12" title="Nim harus berjumlah 12" required>
     </div>
     <div class="form-group">
         <label for="alamat">Alamat</label>
