@@ -1,4 +1,4 @@
-### Admin Panel Database Standart
+### Admin Dashboard Student Management App
 
 ## Project dibuat dengan bahasa 🈹 :
 - HTML
@@ -10,13 +10,13 @@
 
 ![Screenshot (146)](https://user-images.githubusercontent.com/53132950/92082990-873b5280-edef-11ea-980b-9e31bf81f893.png)
 
-## Tujuan dibuatnya admin panel database ? 🤨
+## Tujuan dibuat Admin Dashboard Student Management App ? 🤨
 
 Mempermudah proses manajemen data mahasiswa di universitas atau sekolah oleh admin, dan Sebagai implementasi dari hasil belajar admin pribadi dalam proses pembelajaran bahasa pemrograman PHP.
 
 ## Mengapa open source ? 🤔
 
-Karena masih banyak fitur yang dapat ditambahkan lagi didalamnya sehingga membutuhkan kontribusi teman - teman untuk melakukannya kedepan, dan juga masih terdapat bug yang belum bisa saya pecahkan saat ini (still searching for solving)😅.
+Karena masih banyak fitur yang dapat ditambahkan lagi didalamnya sehingga membutuhkan kontribusi teman - teman untuk melakukannya kedepan, dan juga masih terdapat bug yang belum bisa saya pecahkan saat ini (still searching for solving).
 
 ## Fitur yang tersedia 💥
 
